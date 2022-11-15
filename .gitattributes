@@ -1,0 +1,5 @@
+**/__mocks__/ export-ignore
+**/*.test.js export-ignore
+.eslintrc.cjs export-ignore
+babel.config.cjs export-ignore
+jest.config.js export-ignore
