@@ -1,0 +1,61 @@
+{
+    "variables": {},
+    "globals":
+    {
+        // example docs
+        //"background": "var(black)",
+        //"foreground": "var(white)",
+        //"caret": "color(var(white) alpha(0.8))"
+
+        /* order by docs */
+
+        /** Globals */
+        "background": "var(bg-color)",
+        "foreground": "var(white2)",
+        "invisibles": "var(red2)",
+        "caret": "var(black5)", // mouser cursor
+        "block_caret": "var(blue1)",
+        "line_highlight": "var(black3)",
+        /** Accents */
+        "misspelling": "var(orange1)", // not working
+        "fold_marker": "var(yellow1)", // when folded, the "...
+        "minimap_border": "var(yellow1)", // not working
+        "accent": "var(cyan2)",
+        /** Css */
+        // Popup css: Example, bg color, link color, text color of Definition panel. Round corner, border, bg comes from Theme file.
+        // "popup_css": "html, body { background-color: var(--background); color: #B4B4B4; } body { padding: 0px; } a { color: #0282F2; line-height: 1.6em; text-decoration: underline; }",
+        // "popup_css": "\n      html, body {\n        background-color: #f4f5f6;\n        border-radius: 4px;\n      color: #808080;\n      }\n      body {\n        padding: 6px 12px;\n      }\n      a {\n        color: #404040;\n      line-height: 1.6em;\n      text-decoration: none;\n}\n    ",
+        // phantom css, to test -> it is the badge/button "UI:select color scheme/theme" inside text line control overlay. 
+        // "phantom_css": "html, body { background-color: #404040; border-radius: 4px; color: #D8D8D8; } body { padding: 1px 3px; } a { color: #5DD8FF; line-height: 1.6em; text-decoration: underline; }",
+        // "sheet_css": ,
+        /** Gutter */
+        "gutter": "var(bg-color)",
+        "gutter_foreground": "color(var(gray2) alpha(0.7))",
+        // "gutter_foreground": "{font-family: Helvetica";\n        font-size: 8px;\n      color: #808080;\n}",
+        /** Diff */
+        "line_diff_width": "2"
+    },
+    "rules":
+    [
+        /**
+         *
+         * ENTITY
+         *
+         */
+        {
+            "name": "Entity name",
+            "scope": "entity.name",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "Entity other inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(blue5)"
+        },
+        {
+            "name": "Entity name section",
+            "scope": "entity.name.section",
+            "foreground": "var(purple1)" 
+        }
+    ]
+}

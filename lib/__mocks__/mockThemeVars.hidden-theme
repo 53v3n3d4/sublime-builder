@@ -1,0 +1,16 @@
+{
+    "extends": "colors-palette.hidden-theme",
+    "variables":
+    {
+        // Light and Dark variable names refer to Light and Dark color scheme background
+        // Lighter and Darker Tone variable names refer to tonality
+
+        // Title bar
+        "title-bar-bg":         "var(black8)",
+
+        // Sidebar
+        "sidebar-container-bg":           "var(black1)",
+        "sidebar-container-bg-border":    "var(black1)"
+    },
+    "rules": []
+}

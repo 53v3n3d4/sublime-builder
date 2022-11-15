@@ -1,0 +1,19 @@
+{
+    "variables":
+    {
+        //"green": "hsla(153, 80%, 40%, 1)",
+        //"black": "#111",
+        //"white": "rgb(242, 242, 242)",
+        // Color Hex
+        "black1":         "#000000", // "rgb(0, 0, 0)"
+        "black2":         "#161818", // "rgb(22, 24, 24)"
+        "black3":         "#323234", // "rgb(50, 50, 52)" // black7 => black17
+        "black4":         "#404040", // "rgb(64, 64, 64)" // black8 => black18
+        "black5":         "#808080", // "rgb(128, 128, 128)" // black9 => black19
+        "black6":         "#252727", // "rgb(37, 39, 39)" // black5 => black15
+        "black7":         "#30302F", // "rgb(48, 48, 47)" // black6 => black16
+        "black8":         "#232323", // "rgb(35, 35, 35)" // black4 => black14
+        "black9":         "#18171B" // "rgb(24, 23, 27)" // black3 => black13
+    },
+    "rules": []
+}

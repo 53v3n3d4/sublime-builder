@@ -1,0 +1,60 @@
+/**
+ * @file Treble Dark.sublime-theme - Treble Dark Theme
+ * @copyright Seven Eda
+ * @license MIT license
+ */
+{
+    "extends": "dark-vars.hidden-theme",
+    "variables": {},
+    "rules":
+    [
+        /**
+         *
+         * WINDOWS
+         *
+         * Title bar
+         *
+         */
+        {
+            "class": "title_bar",
+            // "settings": ["themed_title_bar"],
+            "bg": "var(title-bar-bg)",
+            "style": "system",
+            "layer0.tint": null,
+            "layer0.opacity": 0,
+            "layer0.texture": ""
+        },
+
+        /**
+         *
+         * SIDEBAR
+         *
+         * Sidebar container
+         *
+         */
+        {
+            "class": "sidebar_container",
+            "settings": {
+                "dark_theme_style": ["mix", "analog", "digital"]
+            },
+            "content_margin": [
+                0,
+                8,
+                0,
+                0
+            ],
+            "layer0.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer0.tint": "var(sidebar-container-bg)",
+            // Layer 1: border
+            "layer1.draw_center": false,
+            "layer1.inner_margin": [
+                0,
+                1,
+                0,
+                0
+            ], // border sidebar top
+            "layer1.opacity": 1,
+            "layer1.tint": "var(sidebar-container-bg-border)"
+        }
+    ] // rules
+}
