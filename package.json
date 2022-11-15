@@ -1,0 +1,51 @@
+{
+  "name": "sublime-builder",
+  "version": "0.2.1",
+  "description": "Sublime Text theme and color-scheme builder.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/53v3n3d4/sublime-builder.git"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "jest-coverage": "jest --coverage",
+    "lint": "eslint '**/*.js'",
+    "test": "jest"
+  },
+  "keywords": [
+    "Sublime Text"
+  ],
+  "author": "Seven Eda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/53v3n3d4/sublime-builder/issues"
+  },
+  "homepage": "https://github.com/53v3n3d4/sublime-builder",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "babel-plugin-transform-import-meta": "^2.2.0",
+    "eslint": "^8.27.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.3.1"
+  },
+  "files": [
+    "index.js",
+    "helpers/arrayInclude.js",
+    "helpers/Counter.js",
+    "helpers/messageColor.js",
+    "helpers/ProgressBar.js",
+    "helpers/strNumbers.js",
+    "lib/sublimeBuilder.js",
+    "lib/watchDir.js"
+  ],
+  "packageManager": "yarn@3.2.4"
+}
