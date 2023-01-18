@@ -13,14 +13,14 @@ export class ProgressBar {
   start (total) {
     this.total = typeof total === 'number'
       ? total
-      : console.log(color('Should be an integer.', 'red'))
+      : console.log(color('Should be a number.', 'red'))
     this.current = 0
   }
 
   update (current) {
     this.current = typeof current === 'number'
       ? current
-      : console.log(color('Should be an integer.', 'red'))
+      : console.log(color('Should be an number.', 'red'))
     let progress = this.current / this.total
     progress = Math.min(Math.max(progress, 0), 1)
     this.draw(progress)

@@ -2,9 +2,9 @@
 
 Why?  
 - Clean comments in final file but keep them on sources
-- Show all settings for user when customize theme/color-scheme, which not happens when using hidden theme files
+- Show all settings for user when customize theme/color-scheme, this does not happen when using hidden theme files
 
-## Builder
+## builder
 
 Sublime theme and color-scheme builder.
 
@@ -50,7 +50,7 @@ builder(
 )
 ```
 
-## Watch method - Build sublime files when changed.
+## watchDir - build sublime files when changed
 
 Build big theme files is slow when using replace method. Merge method is fast.
 ```
