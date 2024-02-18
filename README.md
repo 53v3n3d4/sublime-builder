@@ -25,7 +25,8 @@ It can merge files or replace variables.
   replaceFiles: [
     pathFile(adaptiveVars, themeDir),
     pathFile(colorsTheme, themeDir)
-  ]
+  ],
+  tabSpaces: 4
 }
 
 @example theme,
@@ -35,7 +36,10 @@ builder(
   adaptiveData.title,
   adaptiveData.author,
   adaptiveData.license,
-  adaptiveData.filename
+  adaptiveData.filename,
+  null,
+  null,
+  adaptiveData.tabSpaces
 )
 @example theme,
 builder(
@@ -46,7 +50,8 @@ builder(
   adaptiveData.license,
   adaptiveData.filename,
   null,
-  adaptiveData.rules
+  adaptiveData.rules,
+  adaptiveData.tabSpaces
 )
 ```
 

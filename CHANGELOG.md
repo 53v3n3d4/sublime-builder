@@ -1,10 +1,10 @@
 # Changelog
 
-## [0.2.x] - 2023
+## [0.2.2] - 2024
 - Enable awaitWriteFinish, chokidar option
+- Add tabSpaces option
 
 ## [0.2.1] - 2022-11-14
-
 - Add mergeDeep method
 - Add replaceVars method
 - Add watchDir feature
