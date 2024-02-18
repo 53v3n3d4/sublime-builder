@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.2.2] - 2024
+## [0.2.2] - 2024-02-18
 - Enable awaitWriteFinish, chokidar option
 - Add tabSpaces option
 
