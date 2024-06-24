@@ -3,6 +3,7 @@
 ## [0.2.2] - 2024-02-18
 - Enable awaitWriteFinish, chokidar option
 - Add tabSpaces option
+- Rename tabSpaces to tabSpace
 
 ## [0.2.1] - 2022-11-14
 - Add mergeDeep method
