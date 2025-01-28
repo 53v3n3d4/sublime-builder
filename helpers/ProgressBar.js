@@ -34,11 +34,18 @@ export class ProgressBar {
     const incomplete = this.bar(length, '-')
     const percentage = Math.floor(progress * 100)
 
-    process.stdout.clearLine()
-    process.stdout.cursorTo(0)
-    process.stdout.write(
-      `Building: [${complete}${incomplete}] | ${percentage}%`
-    )
+    if (process.stdout.isTTY) {
+      process.stdout.clearLine()
+      process.stdout.cursorTo(0)
+      process.stdout.write(
+        `Building: [${complete}${incomplete}] | ${percentage}%`
+      )
+    } else {
+      // GitHub workflow CI Js Tests
+      process.stdout.write(
+        `Building: [${complete}${incomplete}] | ${percentage}%`
+      )
+    }
     if (percentage === 100) {
       console.log('\n' + color('Building done.', 'gray'))
     }
