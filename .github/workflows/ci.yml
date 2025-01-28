@@ -21,6 +21,6 @@ jobs:
         cache: 'yarn'
         cache-dependency-path: ./package.json
     - name: Install dependencies
-      run: yarn install
+      run: yarn install --no-immutable
     - name: Run tests
       run: yarn test
