@@ -19,6 +19,7 @@ jobs:
       with:
         node-version: latest
         cache: 'yarn'
+        cache-dependency-path: ./package.json
     - name: Install dependencies
       run: yarn install
     - name: Run tests
