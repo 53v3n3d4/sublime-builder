@@ -12,11 +12,14 @@ jobs:
     - uses: actions/checkout@v4
       with:
         persist-credentials: false
+    - name: Enable Corepack
+      run: corepack enable
     - name: Node latest
       uses: actions/setup-node@v4
       with:
         node-version: latest
+        cache: 'yarn'
     - name: Install dependencies
-      run: yarn
+      run: install --immutable
     - name: Run tests
       run: yarn test
