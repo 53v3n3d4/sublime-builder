@@ -1,0 +1,23 @@
+name: GitHub CI Js Tests
+
+on: push
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    permissions:
+      # Passing one of default ones.
+      contents: read
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Node latest
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        cache: yarn
+    - name: Install dependencies
+      run: yarn
+    - name: Run tests
+      run: yarn test
