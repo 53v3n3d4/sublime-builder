@@ -1,26 +1,29 @@
 name: GitHub CI Js Tests
 
-on: push
+on: [push]
 
 jobs:
   tests:
+
+    name: Js Tests
     runs-on: ubuntu-latest
     permissions:
       # Passing one of default ones.
       contents: read
+
     steps:
-    - uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-    - name: Enable Corepack
-      run: corepack enable
-    - name: Node latest
-      uses: actions/setup-node@v4
-      with:
-        node-version: latest
-        cache: 'yarn'
-        cache-dependency-path: ./package.json
-    - name: Install dependencies
-      run: yarn install --no-immutable
-    - name: Run tests
-      run: yarn test
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Node latest
+        uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: 'yarn'
+          cache-dependency-path: ./package.json
+      - name: Install dependencies
+        run: yarn install --no-immutable
+      - name: Run tests
+        run: yarn jest-coverage
