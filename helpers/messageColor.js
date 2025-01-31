@@ -1,4 +1,5 @@
-const messageWrongColor = 'Use one of these color options: cyan, gray, purple, red or yellow.'
+const messageWrongColor =
+  'Use one of these color options: cyan, gray, purple, red or yellow.'
 
 export const color = (text, tint) => {
   switch (tint) {

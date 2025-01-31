@@ -2,7 +2,8 @@ import { color } from './messageColor.js'
 
 /**
  * Progress bar
- * @see https://medium.com/@bargord11/write-your-first-node-js-terminal-progress-bar-5bd5edb8a563
+ * @see https://medium.com/@bargord11/
+ *      write-your-first-node-js-terminal-progress-bar-5bd5edb8a563
  * @see https://github.com/visionmedia/node-progress/
  */
 export class ProgressBar {
