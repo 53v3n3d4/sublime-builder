@@ -1,5 +1,10 @@
 ## sublime-builder
 
+<p align="left">
+    <a href="https://github.com/53v3n3d4/sublime-builder/actions/workflows/ci.yml"><img src="https://github.com/53v3n3d4/sublime-builder/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
+    <a href="https://nodejs.org/en/about/previous-releases"><img src="https://img.shields.io/badge/node->=17.0.0-green" alt="node compatibility"></a>
+</p>
+
 Why?  
 - Clean comments in final file but keep them on sources
 - Show all settings for user when customize theme/color-scheme, this does not happen when using hidden theme files
